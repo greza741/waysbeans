@@ -97,7 +97,7 @@ export const Cart = () => {
           </Button>
           <Button
             bgColor={"transparent"}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             textAlign="center"
             mt="4"
             color="brand.coklat"
