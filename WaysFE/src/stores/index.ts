@@ -5,7 +5,6 @@ import { userSlice } from "./user/slice";
 import { productSlice } from "./product/slice";
 import { cartSlice } from "./cart/slice";
 import { transactionSlice } from "./transaction/slice";
-// import { dashboardSlice } from "./dasboard/slice";
 const store = configureStore({
   reducer: {
     auth: authSlice.reducer,
@@ -13,7 +12,6 @@ const store = configureStore({
     product: productSlice.reducer,
     cart: cartSlice.reducer,
     transaction: transactionSlice.reducer,
-    // dashboard: dashboardSlice.reducer,
   },
 });
 

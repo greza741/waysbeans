@@ -61,7 +61,10 @@ export function ProductTable({ products }: { products: Product[] }) {
             </Thead>
             <Tbody>
               {products?.map((product: Product, index: number) => (
-                <Tr key={product.id}>
+                <Tr
+                  key={product.id}
+                  bg={index % 2 === 0 ? "white" : "gray.500"}
+                >
                   <Td>{index + 1}</Td>
                   <Td>
                     <Image

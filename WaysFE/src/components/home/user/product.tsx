@@ -69,7 +69,6 @@ export function Product() {
               <Box key={product.id} bg="brand.product" borderRadius="md">
                 <Image
                   src={product.image}
-                  alt={product.name}
                   objectFit={"cover"}
                   mx="auto"
                   mb={4}

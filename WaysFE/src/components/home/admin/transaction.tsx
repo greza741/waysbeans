@@ -113,6 +113,7 @@ export const Transaction = () => {
               <Table variant="simple" bg="grey" color="white">
                 <Thead>
                   <Tr>
+                    <Th color="white">No</Th>
                     <Th color="white">Items</Th>
                     <Th color="white">Total</Th>
                     <Th color="white">Status</Th>
@@ -124,7 +125,8 @@ export const Transaction = () => {
                   {transaction.transaction.map((trans) =>
                     trans.TransactionItem.map(
                       (item: ITransactionItem, j: number) => (
-                        <Tr key={j}>
+                        <Tr key={item.id}>
+                          <Td>{(j = 1)}</Td>
                           <Td>{item.product?.name}</Td>
                           <Td>{formatCurrency(item.product.price)}</Td>
                           <Td>
